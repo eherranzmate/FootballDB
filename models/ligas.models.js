@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const ligasSchema = new Schema(
     {
         nombre:{type: String, required: true},
-        pais: {type: String, required: true},
+        pais: {type: String},
         nivel: {type: String},
         numeroEquipos:{type: Number},
         fundacion:{type: Number},
@@ -14,5 +14,5 @@ const ligasSchema = new Schema(
     { timestamps: true }
 );
 
-const Liga = mongoose.model('Liga', ligasSchema)
-module.exports = Liga
+const Liga = mongoose.model('Liga', ligasSchema);
+module.exports = Liga;

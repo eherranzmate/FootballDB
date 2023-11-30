@@ -9,7 +9,7 @@ const playersSchema = new Schema(
         nacionalidad: {type: String},
         posicion:{type: String},
         retirado:{type: Boolean},
-        liga:{type: String, required: true},
+        liga:{type: mongoose.Types.ObjectId, ref: "Liga"}
     },
     { timestamps: true }
 );

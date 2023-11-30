@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2 {
+    margin-left:20px;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+input, button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#playersList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.playerCard {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
